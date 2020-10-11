@@ -1,0 +1,47 @@
+.header {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--main-header-color);
+}
+
+.headertopspace {
+    height: 10%;
+}
+
+.titleblock {
+    margin: 0 3.5vw;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    line-height: 4vw;
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, var(--secondary-color), var(--tertiery-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hl {
+    width: 20vw;
+    margin: 3vw 3.5vw 2vw;
+    border-top: 2px solid var(--tertiery-color);
+}
+
+nav {
+    margin: 10px 3.5vw;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.navitem {
+    margin-top: 4vh;
+    font-size: 1.5vw;
+}
