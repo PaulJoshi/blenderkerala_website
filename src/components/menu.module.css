@@ -1,6 +1,6 @@
 .header {
     width: 30%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     background-color: var(--main-header-color);
 }
@@ -44,4 +44,9 @@ nav {
 .navitem {
     margin-top: 4vh;
     font-size: 1.5vw;
+}
+
+li a:hover {
+    transition: color 0.2s ease;
+    color: white;
 }

@@ -6,12 +6,5 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: 35559188518,
-      },
-    },
-  ],
+  plugins: [],
 }
