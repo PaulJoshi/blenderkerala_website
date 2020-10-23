@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
-import Menu from "../components/menu"
+import React from 'react'
+import About from '../components/About/about'
+import Menu from "../components/Menu/menu"
 
-export class about extends Component {
-    render() {
-        return (
-            <div>
-               <Menu/> 
-            </div>
-        )
-    }
-}
+const about = () => (
+    <div className='container'>
+        <Menu/>
+        <About/>
+    </div>
+);
 
-export default about
+export default about;

@@ -1,0 +1,10 @@
+.text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5vw 4vw;
+}
+
+.text {
+    margin: 0.6vw;
+}

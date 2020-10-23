@@ -1,17 +1,17 @@
 import React from "react"
 import BlenderKeralaLogo from "../assets/blenderkeralalogo.jpg"
-import Layout from "../components/layout"
-import Menu from "../components/menu"
+import Layout from "../components/Layout/layout"
+import Menu from "../components/Menu/menu"
 
 export default function Home() {
 
   return <Layout>
-    <div  className='container'>
+    <div className='container'>
       <Menu />
       <div className='home'>
         <div className='intro-area'>
           <div className='intro-text-area'>
-            <h3 className='intro-text'>WELCOME</h3>
+            <h2 className='intro-text'>WELCOME</h2>
             <p className='intro-text'>We are an ardent community of Blender Artists based in Kerala, India.</p>
             <p className='intro-text'>Our mission is to build a platform for collaboration, learning and sharing on all things Blender and to encourage the use of Blender among the people of Kerala.</p>
             <p className='intro-text'>Join us below</p>

@@ -5,8 +5,8 @@ import menuStyles from "./menu.module.css"
 const Menu = () => (
   <div><div className={menuStyles.header}>
     <div className={menuStyles.headertopspace}></div>
-    <h1 className={menuStyles.titleblock}><p><Link className={menuStyles.title} to=''>BLENDER</Link></p>
-    <p><Link  className={menuStyles.title} to=''>KERALA</Link></p></h1>
+    <h1 className={menuStyles.titleblock}><p><Link className={menuStyles.title} to='/'>BLENDER</Link></p>
+    <p><Link className={menuStyles.title} to='/'>KERALA</Link></p></h1>
     <div className={menuStyles.hl}/>
     <nav>
       <ul className={menuStyles.navlist}>

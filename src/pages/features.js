@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
-import Menu from "../components/menu"
+import React from 'react'
+import Features from '../components/Features/features'
+import Menu from "../components/Menu/menu"
 
-export class features extends Component {
-    render() {
-        return (
-            <div>
-               <Menu/> 
-            </div>
-        )
-    }
-}
+const features = () => (
+    <div className='container'>
+        <Menu/>
+        <Features/>
+    </div>
+);
 
-export default features
+export default features;

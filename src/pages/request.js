@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
-import Menu from "../components/menu"
+import React from 'react'
+import Request from '../components/Request/request'
+import Menu from "../components/Menu/menu"
 
-export class request extends Component {
-    render() {
-        return (
-            <div>
-               <Menu/> 
-            </div>
-        )
-    }
-}
+const request = () => (
+    <div className='container'>
+        <Menu/>
+        <Request/>
+    </div>
+);
 
-export default request
+export default request;
