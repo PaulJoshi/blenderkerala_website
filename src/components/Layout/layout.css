@@ -9,11 +9,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 4vw;
+    box-sizing: border-box;
 }
 
 .intro-text {
     line-height: 30px;
-    margin: 0.6vw 4vw;
+    margin-top: 1vw;
 }
 
 .intro-logo-parent {
@@ -33,15 +35,12 @@
   transform: scale(1.05);
 }
 
-.join-area {
-    background: linear-gradient(to right, var(--secondary-color), var(--tertiery-color));
-}
-
 .join-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 10vw;
+    background: linear-gradient(to right, var(--secondary-color), var(--tertiery-color));
 }
 
 .social-icon a img {
@@ -67,10 +66,8 @@
 
 .features-area {
     width: 50%;
-}
-
-.features-text {
-    margin: 4vw 2vw;
+    padding: 4vw;
+    box-sizing: border-box;
 }
 
 .request-area {
@@ -79,16 +76,14 @@
     justify-content: space-evenly;
     width: 50%;
     background: var(--main-header-color);
-}
-
-.request-text {
-    margin: 4vw 4vw 2vw;
+    padding: 4vw;
+    box-sizing: border-box;
 }
 
 .request-button {
     font-weight: 600;
-    padding: 15px 20px;
-    margin: 0px 4vw 4vw;
+    padding: 15px;
+    margin-top: 2vw;
     color: var(--main-bg-color);
     background: linear-gradient(to right, var(--secondary-color), var(--tertiery-color));
     border: none;
@@ -97,4 +92,65 @@
 button:hover {
     transition: all 0.3s ease-in-out;
     filter: brightness(1.2);
+}
+
+@media (max-width: 1024px) {
+
+    * {
+        font-size: small;
+    }
+
+    .intro-text {
+        line-height: 25px;
+    }
+
+    .social-icon a img {
+        width: 3rem;
+    }
+    
+    .vl {
+        height: 40px;
+    }
+}
+
+@media (max-width: 560px) {
+    .intro-area {
+        flex-direction: column;
+    }
+
+    .intro-text-area {
+        width: 100%;
+        padding: 6vw 4vw;
+    }
+
+    .intro-text {
+        line-height: 20px;
+    }
+
+    .intro-logo-parent {
+        width: 100%;
+    }
+
+    .join-list {
+        height: 12vh;
+    }
+
+    
+    .more-area {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-area {
+        width: 100%;
+    }
+
+    .request-area {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .request-text {
+        line-height: 20px;
+    }
 }

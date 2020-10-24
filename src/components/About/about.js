@@ -2,7 +2,7 @@ import React from "react"
 import "./about.css"
 
 const About = ({ children }) => (
-  <div className='home' style={{width: "70%", height: "100vh"}}>
+  <div className='home' style={{height: "100vh"}}>
     <div className='text-area'>
       <h2 className='text'>ABOUT US</h2>
       <p className='text'>We are an ardent community of Blender Artists based in Kerala, India.</p>
