@@ -1,11 +1,11 @@
 import React from "react"
-import BlenderKeralaLogo from "../assets/blenderkeralalogo.jpg"
 import Layout from "../components/Layout/layout"
 import Menu from "../components/Menu/menu"
 import {Link, navigate} from 'gatsby';
+import CarouselCard from "../components/CarouselCard/carouselCard"
+
 
 export default function Home() {
-
   return <Layout>
     <div className='container'>
       <Menu />
@@ -17,7 +17,7 @@ export default function Home() {
             <p className='intro-text'>Our mission is to build a platform for collaboration, learning and sharing on all things Blender and to encourage the use of Blender among the people of Kerala.</p>
             <p className='intro-text'>Join us below</p>
           </div>
-          <div className='intro-logo-parent'><img className='intro-logo-child' src={BlenderKeralaLogo} alt='BlenderKerala logo'/></div>
+          <div className='intro-logo-parent'><img className='intro-logo-child' src="../../blenderkeralalogo.jpg" alt='BlenderKerala logo'/></div>
         </div>
         <ul className='join-list'>
           <li className='social-icon'><a target="noopener" href="https://discord.gg/zMJfrDw"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIKdmlld0JveD0iMCAwIDE3MiAxNzIiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48ZyBmaWxsPSIjMWYyODMzIj48cGF0aCBkPSJNMTQzLjMzMzMzLDQzYzAsMCAtMTYuNDI5NTgsLTEyLjg1NyAtMzUuODMzMzMsLTE0LjMzMzMzbC0xLjc0ODY3LDMuNDk3MzNjMTcuNTQ0LDQuMjkyODMgMjUuNTkyMTcsMTAuNDQ1NDIgMzMuOTk4NjcsMTguMDAyNjdjLTE0LjQ5NDU4LC03LjM5OTU4IC0yOC44MDY0MiwtMTQuMzMzMzMgLTUzLjc1LC0xNC4zMzMzM2MtMjQuOTQzNTgsMCAtMzkuMjU1NDIsNi45MzM3NSAtNTMuNzUsMTQuMzMzMzNjOC40MDY1LC03LjU1NzI1IDE3Ljk4MTE3LC0xNC4zODcwOCAzMy45OTg2NywtMTguMDAyNjdsLTEuNzQ4NjcsLTMuNDk3MzNjLTIwLjM1NjkyLDEuOTI0MjUgLTM1LjgzMzMzLDE0LjMzMzMzIC0zNS44MzMzMywxNC4zMzMzM2MwLDAgLTE4LjM1MDI1LDI2LjYwNjI1IC0yMS41LDc4LjgzMzMzYzE4LjQ5NzE3LDIxLjMzMTU4IDQ2LjU4MzMzLDIxLjUgNDYuNTgzMzMsMjEuNWw1Ljg3MzA4LC03LjgyOTU4Yy05Ljk2ODgzLC0zLjQ2NTA4IC0yMS4yMjc2NywtOS42NTM1IC0zMC45NTY0MiwtMjAuODM3MDhjMTEuNjAyODMsOC43NzkxNyAyOS4xMTQ1OCwxNy45MTY2NyA1Ny4zMzMzMywxNy45MTY2N2MyOC4yMTg3NSwwIDQ1LjczMDUsLTkuMTM3NSA1Ny4zMzMzMywtMTcuOTE2NjdjLTkuNzI4NzUsMTEuMTgzNTggLTIwLjk4NzU4LDE3LjM3MiAtMzAuOTU2NDIsMjAuODM3MDhsNS44NzMwOCw3LjgyOTU4YzAsMCAyOC4wODYxNywtMC4xNjg0MiA0Ni41ODMzMywtMjEuNWMtMy4xNDk3NSwtNTIuMjI3MDggLTIxLjUsLTc4LjgzMzMzIC0yMS41LC03OC44MzMzM3pNNjIuNzA4MzMsMTA3LjVjLTYuOTI2NTgsMCAtMTIuNTQxNjcsLTYuNDE3NzUgLTEyLjU0MTY3LC0xNC4zMzMzM2MwLC03LjkxNTU4IDUuNjE1MDgsLTE0LjMzMzMzIDEyLjU0MTY3LC0xNC4zMzMzM2M2LjkyNjU4LDAgMTIuNTQxNjcsNi40MTc3NSAxMi41NDE2NywxNC4zMzMzM2MwLDcuOTE1NTggLTUuNjE1MDgsMTQuMzMzMzMgLTEyLjU0MTY3LDE0LjMzMzMzek0xMDkuMjkxNjcsMTA3LjVjLTYuOTI2NTgsMCAtMTIuNTQxNjcsLTYuNDE3NzUgLTEyLjU0MTY3LC0xNC4zMzMzM2MwLC03LjkxNTU4IDUuNjE1MDgsLTE0LjMzMzMzIDEyLjU0MTY3LC0xNC4zMzMzM2M2LjkyNjU4LDAgMTIuNTQxNjcsNi40MTc3NSAxMi41NDE2NywxNC4zMzMzM2MwLDcuOTE1NTggLTUuNjE1MDgsMTQuMzMzMzMgLTEyLjU0MTY3LDE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"/></a></li>
@@ -28,7 +28,7 @@ export default function Home() {
         </ul>
         <section className='more-area'>
           <Link className='features-area' to="/features/">
-            <p className='features-text'>Recent community features</p>
+            <CarouselCard/>
           </Link>
           <div className='request-area'>
             <p className='request-text'>Get your design needs met by our expert community members</p>
