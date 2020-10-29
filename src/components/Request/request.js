@@ -1,6 +1,12 @@
 import React from "react"
 import "./request.css"
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 class Request extends React.Component {
 
   state = {
