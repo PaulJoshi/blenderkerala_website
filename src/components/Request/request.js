@@ -32,11 +32,10 @@ class Request extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "requests-form", ...this.state })
     })
-      .then(() => alert("Success!"))
+      .then(() => alert(`Success! We have received your request ${this.state.name}`))
       .catch(error => alert(error));
 
     e.preventDefault();
-    alert(`We have received your request ${this.state.name}!`)
   };
 
   render() {
