@@ -1,4 +1,45 @@
+
+.heading-area {
+    padding: 3vw 6vw 3vw;
+}
+
+.heading-area h2 {
+    font-size: x-large;
+    margin: 0px 0px 10px;
+}
+
+.heading-area p {
+    margin: 0px 0px 20px;
+}
+
+.heading-area hr {
+    border: 1px solid var(--tertiery-color);
+}
+
 .form-area {
-    padding: 4vw;
-    text-align: center;
+    padding: 0px 6vw;
+    background-color: var(--main-bg-color);
+}
+
+.request-label {}
+
+.request-input {
+    color: var(--main-header-color);
+    width: 100%;
+    margin: 10px 0px 35px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 2px;
+}
+
+.request-button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+    .heading-area {
+        padding-top: 7vw;
+    }
 }
