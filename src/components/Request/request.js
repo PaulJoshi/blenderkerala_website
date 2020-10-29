@@ -20,10 +20,18 @@ class Request extends React.Component {
     })
   }
 
-  handleSubmit = event => {
-    event.preventDefault()
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "requests-form", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
     alert(`We have received your request ${this.state.name}!`)
-  }
+  };
 
   render() {
     return <div className='home' style={{height: "100vh"}}>
@@ -35,7 +43,7 @@ class Request extends React.Component {
       <section className="form-area">
         <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="requests-form" onSubmit={this.handleSubmit}>
           <input type="hidden" name="bot-field" />
-          <input type="hidden" name="requests-form" value="request" />
+          <input type="hidden" name="form-name" value="requests-form" />
           <label className="request-label">
             Name
             <input
