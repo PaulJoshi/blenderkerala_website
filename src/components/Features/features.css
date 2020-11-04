@@ -1,4 +1,95 @@
 .instagram-area {
-    padding: 4vw;
     text-align: center;
+}
+  
+.Loading {
+    margin: 40vh auto;
+    border: 5px solid var(--main-header-color);
+    border-top: 5px solid var(--tertiery-color);
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Feed {
+    padding: 0px;
+}
+
+.Feed a img {
+    margin: 0px;
+    width: 33.33%;
+    float: left;
+    animation: fadein 2s;
+}
+
+.Feed a img:hover {
+    transition: all 0.3s ease-in-out;
+    filter: brightness(1.2);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.view-more {
+    position:fixed;
+	bottom:40px;
+    right:40px;
+    height: 60px;
+    width: 170px;
+    background-color: var(--secondary-color);
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.3s;
+}
+
+.view-more:hover {
+    bottom: 46px;
+}
+
+.view-more-text {
+    color: var(--main-bg-color);
+}
+
+@media (max-width: 1024px) {
+    .Feed a img {
+        width: 50%;
+    }
+
+    .view-more {
+        width: 155px;
+        height: 50px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    .Feed a img {
+        width: 100%;
+    }
+
+    .view-more {
+        width: 145px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
 }

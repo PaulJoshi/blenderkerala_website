@@ -8,7 +8,7 @@ import CarouselCard from "../components/CarouselCard/carouselCard"
 export default function Home() {
   return <Layout>
     <div className='container'>
-      <Menu />
+      <Menu/>
       <div className='home'>
         <div className='intro-area'>
           <div className='intro-text-area'>
@@ -28,7 +28,8 @@ export default function Home() {
         </ul>
         <section className='more-area'>
           <Link className='features-area' to="/features/">
-            <CarouselCard/>
+            <div className='features-image'><CarouselCard/></div>
+            <span className='features-text'>See Featured Work</span>
           </Link>
           <div className='request-area'>
             <p className='request-text'>Get your design needs met by our expert community members</p>

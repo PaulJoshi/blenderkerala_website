@@ -67,10 +67,31 @@
 .features-area {
     width: 50%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.features-buttons {
-    background: none;
+.features-text {
+    position: absolute;
+    font-size: xx-large;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.features-image {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.features-area:hover .features-image{
+    filter: brightness(0.4);
+}
+
+.features-area:hover .features-text{
+    opacity: 1;
 }
 
 .request-area {
@@ -133,10 +154,14 @@ button:hover {
         width: 100%;
     }
 
+    .intro-logo-parent:hover .intro-logo-child,
+    .intro-logo-parent:focus .intro-logo-child {
+    transform: none;
+    }
+
     .join-list {
         height: 12vh;
     }
-
     
     .more-area {
         flex-direction: column;

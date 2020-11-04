@@ -40,6 +40,10 @@
 
 @media (max-width: 1024px) {
     .heading-area {
-        padding-top: 7vw;
+        padding: 7vw 4vw 3vw;
+    }
+
+    .form-area {
+        padding: 0px 4vw 5vw;
     }
 }
