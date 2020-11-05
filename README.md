@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://blenderkerala.netlify.app/">
-    <img alt="BlenderKerala" src="public/favicon.ico" width="60" />
+    <img src="https://raw.githubusercontent.com/PaulJoshi/blenderkerala_website/main/static/favicon.ico" width="60" />
   </a>
 </p>
 <h1 align="center">
