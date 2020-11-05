@@ -7,7 +7,7 @@ const Features = () => (
     <section className="instagram-area">
     <Feed
       userName="blenderkerala"
-      className="Feed"
+      className="feed"
       classNameLoading="Loading"
     />
     </section>

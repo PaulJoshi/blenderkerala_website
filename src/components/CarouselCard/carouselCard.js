@@ -23,9 +23,10 @@ const CarouselCard = () => (
             }
         }}
     >
-        <img src={images['mushroom_house.jpg']} alt="Mushroom_house" />
-        <img src={images['kraken.jpg']} alt="Kraken" />
-        <img src={images['ancient_kerala.jpg']} alt="Ancient Kerala Homes" />
+        <img src={images['mushroom_house.jpg']} alt="Mushroom_house"/>
+        <img src={images['kraken.jpg']} alt="Kraken"/>
+        <img src={images['ancient_kerala.jpg']} alt="Ancient Kerala Homes"/>
+        <img src={images['mclaren.jpg']} alt="Mclaren F1"/>
     </Carousel>
 )
 

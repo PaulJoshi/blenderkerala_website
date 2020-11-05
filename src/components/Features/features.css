@@ -21,18 +21,18 @@
     }
 }
 
-.Feed {
+.feed {
     padding: 0px;
 }
 
-.Feed a img {
+.feed a img {
     margin: 0px;
     width: 33.33%;
     float: left;
     animation: fadein 2s;
 }
 
-.Feed a img:hover {
+.feed a img:hover {
     transition: all 0.3s ease-in-out;
     filter: brightness(1.2);
 }
@@ -69,7 +69,7 @@
 }
 
 @media (max-width: 1024px) {
-    .Feed a img {
+    .feed a img {
         width: 50%;
     }
 
@@ -82,7 +82,7 @@
 }
 
 @media (max-width: 560px) {
-    .Feed a img {
+    .feed a img {
         width: 100%;
     }
 

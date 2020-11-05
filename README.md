@@ -1,4 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://blenderkerala.netlify.app/">
     <img alt="BlenderKerala" src="public/favicon.ico" width="60" />
