@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const request = () => (
     <div className='container'>
-        <SEO title="Blender Kerala request" />
+        <SEO title="Request" />
         <Menu/>
         <Request/>
     </div>
