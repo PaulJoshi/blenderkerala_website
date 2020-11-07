@@ -2,11 +2,13 @@ import React from "react"
 import Layout from "../components/Layout/layout"
 import Menu from "../components/Menu/menu"
 import {Link, navigate} from 'gatsby';
+import SEO from "../components/seo"
 import CarouselCard from "../components/CarouselCard/carouselCard"
 
 
 export default function Home() {
   return <Layout>
+    <SEO title="Blender Kerala Website" />
     <div className='container'>
       <Menu/>
       <div className='home'>

@@ -1,10 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Blender Kerala`,
+    siteUrl: `https://blenderkerala.netlify.app`,
+    keywords: [`blender`, `kerala`, `community`, `india`],
+    description: `Official website of the blender kerala community`,
+    image: "/blenderkeralalogo.jpg",
+    author: `Paul Joshi`,
+  },
+  plugins: [`gatsby-plugin-react-helmet`]
 }

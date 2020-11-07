@@ -16,9 +16,11 @@
   "dependencies": {
     "gatsby": "^2.24.85",
     "gatsby-cli": "^2.12.108",
+    "gatsby-plugin-react-helmet": "^3.3.14",
     "nuka-carousel": "^4.7.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
     "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed#v1.1.1"
   },
   "devDependencies": {
