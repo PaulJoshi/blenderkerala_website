@@ -8,7 +8,7 @@ import CarouselCard from "../components/CarouselCard/carouselCard"
 
 export default function Home() {
   return <Layout>
-    <SEO/>
+    <SEO title="Home"/>
     <div className='container'>
       <Menu/>
       <div className='home'>
