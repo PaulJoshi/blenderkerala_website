@@ -11,6 +11,7 @@ export default function Home() {
     <SEO title="Home"/>
     <div className='container'>
       <Menu/>
+      <h1 hidden={true}>Blender Kerala</h1>
       <div className='home'>
         <div className='intro-area'>
           <div className='intro-text-area'>
